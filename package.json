@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
-    "test:full": "eslint src/* && flow && jest --coverage",
+    "test": "eslint src/* && flow && jest --coverage",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "lint": "eslint src/*",
@@ -21,6 +20,8 @@
   "devDependencies": {
     "babel-jest": "23.4.0",
     "babel-preset-react-native": "^5",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^5.1.0",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-plugin-flowtype": "^2.50.0",
@@ -33,6 +34,7 @@
     "flow-coverage-report": "^0.5.0",
     "flow-typed": "^2.5.1",
     "jest": "23.4.1",
+    "react-native-mock-render": "^0.0.27",
     "react-test-renderer": "16.4.1"
   },
   "jest": {
@@ -59,10 +61,10 @@
     ],
     "coverageThreshold": {
       "global": {
-        "branches": 85,
-        "functions": 90,
-        "lines": 90,
-        "statements": 90
+        "branches": 0,
+        "functions": 0,
+        "lines": 0,
+        "statements": 0
       }
     }
   },
